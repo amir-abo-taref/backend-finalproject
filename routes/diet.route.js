@@ -4,7 +4,7 @@ const router = express.Router();
 
 
 router.get("/", (req, res) => {
-  dietController.getAlldiets(req, res);
+  dietController.getAlldiet(req, res);
 })
 router.post("/", (req, res) => {
     dietController.addNewdiet(req, res);
