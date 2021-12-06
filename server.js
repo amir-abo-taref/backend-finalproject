@@ -31,11 +31,11 @@ app.use("/users", require("./routes/auth"));
 // Serve static assets in production
 if (process.env.NODE_ENV === "production") {
 	// Set Static Folder
-	app.use(express.static("frontend-finalproject/build"));
+	// app.use(express.static("frontend-finalproject/build"));
 
-	app.get("*", (req, res) => {
-		res.sendFile(path.resolve(__dirname, "frontend-finalproject", "build", "index.html"));
-	});
+// 	app.get("*", (req, res) => {
+// 		res.sendFile(path.resolve(__dirname, "frontend-finalproject", "build", "index.html"));
+// 	});
 }
 
 app.use('/meals', require('./routes/meal.route'));
