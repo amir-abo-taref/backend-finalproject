@@ -5,7 +5,7 @@ const favicon = require("serve-favicon");
 const path = require("path");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-
+app.use(bodyparser.json())
 
 
 
