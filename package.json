@@ -1,5 +1,23 @@
 {
-  "main":"server.js",
+  "name": "backend-finalproject",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000b\u0000a\u0000c\u0000k\u0000e\u0000n\u0000d\u0000-\u0000f\u0000i\u0000n\u0000a\u0000l\u0000p\u0000r\u0000o\u0000j\u0000e\u0000c\u0000t\u0000\r\u0000 \u0000#\u0000 \u0000b\u0000a\u0000c\u0000k\u0000e\u0000n\u0000d\u0000-\u0000f\u0000i\u0000n\u0000a\u0000l\u0000p\u0000r\u0000o\u0000j\u0000e\u0000c\u0000t\u0000\r\u0000 \u0000",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amir-abo-taref/backend-finalproject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amir-abo-taref/backend-finalproject/issues"
+  },
+  "homepage": "https://github.com/amir-abo-taref/backend-finalproject#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
@@ -7,16 +25,13 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "express-validator": "^6.11.1",
+    "express-validator": "^6.13.0",
     "fs": "^0.0.1-security",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.12.11",
-    "multer": "^1.4.2",
+    "mongoose": "^6.0.14",
+    "multer": "^1.4.3",
     "nodemon": "^2.0.15",
     "serve-favicon": "^2.5.0",
     "uuid": "^8.3.2"
-  },
-  "scripts": {
-    "start": "node server.js"
   }
 }
