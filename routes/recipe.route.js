@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
 router.post("/", (req, res) => {
     recipeController.addNewrecipes(req, res);
   })
-  router.put("/", (req, res) => {
+  router.put("/:id", (req, res) => {
     recipeController.getAllrecipes(req, res);
   })
    router.delete("/:id", (req, res) => {
