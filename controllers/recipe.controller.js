@@ -15,6 +15,7 @@ const addNewrecipes = (req, res) => {
     time,
     info
   } = req.body;
+  console.log(req.body)
 
   const recipe = new recipeModel({
     name: name,
@@ -23,7 +24,6 @@ const addNewrecipes = (req, res) => {
      time:time,
     info: info,
   });
-
   recipe.save((err, data) => {
     if (err) return res.status(404).send(err);
     return res.status(200).send(data);
