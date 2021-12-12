@@ -40,7 +40,8 @@ const updaterecipes = (req, res) => {
       image,
       caloriot,
       time,
-      info
+      info,
+      likes
     
     } = req.body;
     recipeModel.findByIdAndUpdate(
@@ -50,7 +51,8 @@ const updaterecipes = (req, res) => {
         image: image,
         caloriot: caloriot,
         time: time,
-        info: info
+        info: info,
+        likes:likes
       },
       { new: true },
       (err, data) => {
