@@ -9,6 +9,7 @@ const getAllrecipes = async (req, res) => {
 
 const addNewrecipes = (req, res) => {
   const {
+    username,
     name,
     image,
     caloriot,
@@ -18,6 +19,7 @@ const addNewrecipes = (req, res) => {
   console.log(req.body)
 
   const recipe = new recipeModel({
+    username:username,
     name: name,
     image:image,
     caloriot: caloriot,
